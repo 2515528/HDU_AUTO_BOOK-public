@@ -282,7 +282,7 @@ class SeatAutoBooker:
         """检查登录是否成功"""
         current_url = self.driver.current_url
         logging.info(f"当前URL: {current_url}")
-        
+        self.driver.get("https://hdu.huitu.zhishulib.com/#!/Space/Category/list")
         if "hdu.huitu.zhishulib.com" in current_url:
             logging.info("成功跳转到目标网站")
             
